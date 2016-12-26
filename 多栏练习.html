@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Metrophobic|Droid+Sans:400,700|Droid+Sans+Mono|Open+Sans:400italic,700italic,800italic,300italic,600italic,400,300,600,700,800|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <style media="screen">
+      * {margin:0; padding:0;}
+      body {font-family:helvetica, arial, sans-serif; }
+      #wrapper {width:960px; border: 1px solid #6b5678; margin: 0 auto;}
+
+      header{	background:#a292ac; padding:3px 10px;}
+      nav {	background:#f7923a; padding:3px 10px;}
+
+      #feature_area article {width:320px; float:left; padding:10px 0;background: #fff;border-top:4px solid #f7be84;}
+      #feature_area .inner{
+        margin:10px 20px;
+      	padding:5px;
+      	background:#fff;
+      	border:5px solid;
+      }
+      section#feature_area article:nth-child(1) .inner{
+        border-color:#d7dd6f;
+      }
+      section#feature_area article:nth-child(2) .inner {
+      	border-color:#f6dec5;
+      	}
+      section#feature_area article:nth-child(3) .inner {
+      	border-color:#d1d8e4;
+      	}
+      section#feature_area article p {
+      	font-family:'Open Sans';
+      	font-weight:300;
+      	font-size:1.15em;
+      	line-height:1em;
+      	text-align:center;
+      	color:#616161;
+      	}
+
+      /* PROMO AREA */
+      #promo_area  article {
+      	float:left;
+      	width:240px;
+      	padding:10px 0;
+      	border-top:4px solid #f7be84;
+      	background:#fff;
+        	}
+      #promo_area article .inner {
+      	margin:0 20px;
+      	padding:10px;
+      	background:#e5e8ed;
+      	}
+        #promo_area article p {
+        	font-family:'Open Sans Condensed';
+        	font-weight:300;
+        	font-size:1em;
+        	line-height:1.5em;
+        	color:#616161;
+        	}
+        footer {
+          clear:both;
+          text-align:center;
+          background:#6b5678;
+        }
+    </style>
+    <title>多栏布局blog首页练习</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Full-width content</h1>
+      </header>
+      <nav>
+        <p>Navigaion menus go here</p>
+      </nav>
+      <section id="branding">
+        <img src="./images/grand_canyon.jpg" alt="Grand Canyon" />
+      </section>
+      <section id="feature_area">
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="promo_area">
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </article>
+      </section>
+      <footer>
+        <p>
+          A CSS template from Stylin’ with CSS, Third Edition by Charles Wyke-Smith
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

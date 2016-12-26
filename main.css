@@ -1,0 +1,11 @@
+  /*p:hover {background-color: green;}*/
+  /*#more-info:target {
+    background-color: red;
+  }*/
+#more-info:target {
+  background-color: green;
+}
+.background{
+  border: 1px solid;
+  color: red;
+}
