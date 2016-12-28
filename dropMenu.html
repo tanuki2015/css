@@ -4,44 +4,107 @@
     <meta charset="utf-8">
     <style media="screen">
       /*视觉样式, 控制字体大小，边框和文本的颜色*/
-      .multi_drop_menu {font:1em helvetica, arial, sans-serif;}
+      /*第一步*/
+      * {margin:0; padding:0; box-sizing: border-box;}
+      body {margin:50px; background:#069;}
+      .multi_drop_menu {font: 1em helvetica, arial, sans-serif;}
       .multi_drop_menu a {
-        display: block;
-        color:#555;
         background-color: #eee;
-        padding:2em 1em;
+        color: #555;
+        padding: .2em 1em;
         border-width: 3px;
         border-color: transparent;
       }
       .multi_drop_menu a:hover {
-        color:#fff;
+        color: #fff;
         background-color: #aaa;
       }
       .multi_drop_menu a:active {
-        background: #fff;
-        color:#ccc;
+        color: #ccc;
+        background-color: #fff;
       }
-      /*功能样式，控制布局和行为*/
-      .multi_drop_menu * {margin: 0; padding:0;}
-      .multi_drop_menu ul {float:left;}
+      /*第二步*/
+      .multi_drop_menu li ul {width:9em;}
+      .multi_drop_menu li li a {
+        border-right-style:none;
+        border-top-style: solid;
+      }
+
+      /*表现样式和功能分开写*
+
+      /*功能样式*/
+      .multi_drop_menu ul {
+        float: left;
+      }
       .multi_drop_menu li {
-        float:left;
+        float: left;
         list-style-type: none;
         position: relative;
       }
       .multi_drop_menu li a {
         display: block;
-        border-right-style: solid;
-        background-clip: padding-box;
+        border-style: solid;
+        background-clip:padding-box;
         text-decoration: none;
       }
-      .multi_drop_menu li:last-child a {border-right-style: none;}
-      .multi_drop_menu li ul {display: none;}
+      .multi_drop_menu li ul {
+        display: none;
+      }
+      /*第二步*/
+      .multi_drop_menu li ul {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%
+      }
+      .multi_drop_menu li li {
+        float:none;
+      }
+      .multi_drop_menu li li ul {
+        display: none;
+      }
+      .multi_drop_menu li ul {
+        display: none;
+      }
+      .multi_drop_menu li:hover > ul {
+        display: block;
+      }
+      /*第三步*/
+      .multi_drop_menu li li ul {
+        top: 0;
+        left: 100%;
+      }
+
+      /*完善功能，添加vertical类*/
+      .multi_drop_menu.vertical {
+        width: 8em;
+      }
+      .multi_drop_menu.vertical li a {
+        border-right-style: none;
+        border-top-style: solid;
+      }
+      .multi_drop_menu.vertical li li a {
+        border-left-style: solid;
+      }
+      .multi_drop_menu.vertical ul,
+      .multi_drop_menu.vertical li {
+        float:none;
+      }
+      .multi_drop_menu.vertical li ul {
+        left: 100%;
+        top: 0;
+      }
+      .multi_drop_menu.vertical li:hover > a {
+        color: #fff;
+        background-color: #aaa;
+      }
+
+
     </style>
     <title>dorpMenu</title>
   </head>
   <body>
-    <nav class="multi_drop_menu">
+    <nav class="multi_drop_menu vertical">
       <ul>
         <li><a href="#">Power</a></li>
         <li><a href="#">Money</a></li>
