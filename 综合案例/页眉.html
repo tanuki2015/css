@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      * {margin:0; padding: 0;}
+      header {
+        height: 70px;
+        position: relative;
+      }
+      header section#title{
+        font-family: Lato, helvetica, sans-serif;
+        border: 1px solid red;
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      header #title h1 {
+        padding: 9px 12px 0 ;
+        font-size: 2.2em;
+      }
+      header #title h2 {
+        font-size: .8em;
+        padding: 0 12px;
+      }
+
+      header .search {
+        width: 150px;
+        position: absolute;
+        right: 20px;
+        top: 23px;
+        border:1px solid #333;
+      }
+      header .search label {
+        display: none;
+      }
+
+
+    </style>
+    <title>header</title>
+  </head>
+  <body>
+    <header>
+      <section id="title">
+        <h1>Stylin’with CSS</h1>
+        <h2>The Blog and Books of Charles Wyke-Smith</h2>
+      </section>
+      <form class="search" action="search-some.php" method="post">
+        <label for="search">search</label>
+        <input type="search" id="search" name="search" placeholder="search">
+      </form>
+    </header>
+  </body>
+</html>

@@ -68,3 +68,51 @@
   * 顶层菜单垂直显示
   * 子菜单对齐
   * 突出显示选择路径
+
+## form案例
+直接修改两个form案例会节省时间。
+
+## 搜索表单
+见searchForm.html
+
+## 弹出层
+
+### css三角形
+
+# 其他的知识点
+1. 块元素会生成一个“块匡”， 而且在块框的前后加上“分隔符”
+2. 不能继承的属性基本是“框模型”的属性：padding margin border background...
+
+##  css权威指南
+### chapter basic visual formatting
+
+1. 每个element 都生成一个 element box
+2. 每个element 都包含一个 content area
+3. content area 周围是 padding, border, margin
+4. padding, border, margin 可有，可无
+
+1. 每个element都被最近的祖先盒子所包围和影响
+2. 三种祖先盒子
+  * block-level
+  * inline-block
+  * table-cell
+
+#### block-level 的 horizontal formatting
+1. 有宽度的box，增加padding, margin, border会增加element box 的width，占据更大空间。
+2. content area 的宽度不变。
+
+<p style="width: 200px;">wideness?</p>
+<p style="width: 200px; padding: 10px;">wideness?</p>
+
+3. 正常流中element box的宽度=父box
+margin-left + border-left + padding-left + content area width + padding-right + border-right + margin-right = 父box的 width
+
+4. 可使用的auto值是margin-left, margin-right和content area width。
+
+5. auto值有一个的时候，这个值会设置为一个定值，使得上面规则3被满足。
+
+6. auto值是两个margin时，则他们相等，内容自然居中。
+
+7. text-align只能让块元素中的内联内容居中，而不是块元素居中（这句没看懂，反正img不行。）。
+
+8. 如果3个都是auto，则margin被设置为0.

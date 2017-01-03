@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      * {margin: 0; padding: 0;}
+      header {
+        font-family: helvetica, arial, sans-serif;
+        display:block;
+        overflow: hidden;
+        width: 500px;
+        margin: 30px;
+        border-radius: 6px;
+        background-color: #ddd;
+      }
+      form.sytlin_form_search1 {
+        float:right;
+        width: 200px;
+        margin: 5px;
+        padding: 5px;
+      }
+      form.sytlin_form_search1 input {
+        float: right;
+        width: 70px;
+        padding: 2px 0 3px 5px;
+        outline: none;
+        font-size: .8em;
+        border-color: #eee #ccc #ccc #eee;
+        border-radius: 10px;
+        transition: 2s width;
+      }
+      form.sytlin_form_search1 input:focus {width: 200px;}
+      form.sytlin_form_search1 label {display: none;}
+    </style>
+    <title>search form</title>
+  </head>
+  <body>
+    <header>
+      <form class="sytlin_form_search1" action="#" method="post">
+        <label for="search">search</label>
+        <input type="search" id="search" name="search" placeholder="search">
+      </form>
+    </header>
+  </body>
+</html>
