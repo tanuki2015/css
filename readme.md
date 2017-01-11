@@ -116,3 +116,5 @@ margin-left + border-left + padding-left + content area width + padding-right + 
 7. text-align只能让块元素中的内联内容居中，而不是块元素居中（这句没看懂，反正img不行。）。
 
 8. 如果3个都是auto，则margin被设置为0.
+
+权威指南好难看，去看《精通css》了

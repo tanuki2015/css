@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    body {
+      font-family: "Myriad Pro", Frutiger, "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Verdana, sans-serif;
+      font-size: 1.4em;
+    	margin-top: 4em;
+    }
+      nav ol {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+      nav li{
+        float: left;
+        margin-right: 0.6em;
+      }
+      nav li a {
+        /*边框也加在a上，方便后面取消*/
+        border: 1px solid #ccc;
+        text-decoration: none;
+        display: block;
+        /*padding要放在a上面，不能放在li上，否则a不能充满li*/
+        padding: 0.2em 0.5em;
+      }
+      nav li a:hover,
+      nav li a:focus,
+      nav li a:active {
+        background-color: blue;
+        color: white;
+      }
+
+      a[rel="prev"] ,
+      a[rel="next"] {
+        border: none;
+      }
+
+      a[rel="prev"]:before {
+        /*箭头字符的编码*/
+        content: "\00AB";
+        padding-right: .5em;
+        /*注意：这个padding-right指箭头字符的right，而不是a的padding-left*/
+      }
+      a[rel="next"]:after {
+        content: "\00BB";
+        padding-left: .5em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li><a href="search.htm?page=1" rel="prev">Prev</a></li>
+        <li><a href="search.htm?page=1">1</a></li>
+        <li><a href="search.htm?page=2">2</a></li>
+        <li><a href="search.htm?page=3">3</a></li>
+        <li><a href="search.htm?page=4">4</a></li>
+        <li><a href="search.htm?page=5">5</a></li>
+        <li><a href="search.htm?page=6" rel="next">Next</a></li>
+      </ol>
+    </nav>
+  </body>
+</html>
