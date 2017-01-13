@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      * {
+        /*在body中清理边距居然不能被下面的ul继承，还是得用*选择符*/
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 76%/1.8 "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+        background-color: #fff;
+      }
+      nav ul {
+        list-style: none;
+        width: 47.8em;
+        background: #faa819 url(img/mainNavBg.gif) repeat-x;
+        /*li浮动后需要被包住*/
+        overflow: hidden;
+      }
+      nav ul li {
+        float: left;
+      }
+      nav ul a {
+        text-decoration: none;
+        /*常规动作，让a充满li*/
+        display: block;
+        /*不定制按钮宽度，而是用padding空出左右位置，利于维护*/
+        padding: 0 3em;
+        color: #fff;
+        line-height: 2.1em;
+        /*border-left: 1px solid #fff;*/
+      }
+      nav ul li:first-child a {
+        border-left: none;
+      }
+      nav ul a:hover,
+      nav ul a:focus {
+        color: #333;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+          <li><a href="#">Shirts</a></li>
+          <li><a href="#">Pants</a></li>
+          <li><a href="#">Dresses</a></li>
+          <li><a href="#">Shoes</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+    </nav>
+  </body>
+</html>
