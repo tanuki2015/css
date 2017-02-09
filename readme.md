@@ -118,3 +118,7 @@ margin-left + border-left + padding-left + content area width + padding-right + 
 8. 如果3个都是auto，则margin被设置为0.
 
 权威指南好难看，去看《精通css》了
+
+
+### flex布局
+把多栏布局2改成了flex布局，很好用，不需要什么浮动啊清除什么的，直接用。

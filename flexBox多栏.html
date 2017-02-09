@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+      * {padding: 0; margin: 0;}
+
+      #wrapper {
+        width: 960px;
+        border: 1px solid #6b5678;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column;
+      }
+
+      header {
+        background:#a292ac; padding:3px 10px;
+      }
+
+      nav {
+        background:#f7923a; padding:3px 10px;
+      }
+
+      #feature {
+        display: flex;
+        flex-flow: row;
+      }
+
+      #feature article {
+        width: 30%;
+        padding: 1em 2em;
+        /*padding: 10px 0;*/
+        background: #fff;
+        border-top: 4px solid #f7be84;
+      }
+
+      #feature article p{
+        font-family:'Open Sans';
+        font-weight:300;
+        font-size:1.15em;
+        line-height:1em;
+        text-align:center;
+        color:#616161;
+      }
+      #feature article:nth-child(2) {
+        background-color: #eee;
+      }
+      #feature .inner {
+        /*margin: 10px 20px;
+        padding: 5px;*/
+        border: 5px solid;
+      }
+      #feature article:nth-child(1) .inner {
+        border-color: #d7dd6f;
+      }
+      #feature article:nth-child(2) .inner {
+        border-color: #f6dec5;
+      }
+      #feature article:nth-child(3) .inner {
+        border-color: #d1d8e4;
+      }
+
+      #promotion {
+        display: flex;
+        flex-flow: row;
+      }
+      #promotion section {
+        width: 23%;
+        padding: 1em 1em;
+        /*width: 240px;*/
+        /*display: table-cell;*/
+        border-top: 4px solid #f7be84;
+        /*padding: 10px 0;*/
+      }
+
+      #promotion .inner {
+        margin: 0 10px;
+        padding: 10px;
+        background:#e5e8ed;
+      }
+      #promotion section p {
+        font-family:'Open Sans Condensed';
+        font-weight:300;
+        font-size:1em;
+        line-height:1.5em;
+        color:#616161;
+      }
+      #promotion .inner p {
+        background-color:
+        color:#616161;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+    </style>
+    <title>hi css</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Full-width content</h1>
+      </header>
+      <nav>
+        <p>
+          Navigation menus go here
+        </p>
+      </nav>
+      <section id="branding">
+        <img src="./images/grand_canyon.jpg" alt="branding" />
+      </section>
+      <section id="feature">
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="promotion">
+        <section>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <p>
+              Integer at neque in magna lacinia bibendum sit amet sit amet dolor. Nam consequat ullamcorper eros, sed bibendum metus faucibus sit amet.
+            </p>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <p>
+          A CSS template from Stylin’ with CSS, Third Edition by Charles Wyke-Smith
+        </p>
+      </footer>
+    </div>
+      </body>
+</html>
